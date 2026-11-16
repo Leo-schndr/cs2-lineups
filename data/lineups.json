@@ -312,6 +312,357 @@
       ],
       "getpos": null,
       "strategies": []
+    },
+    {
+      "id": "inferno-B-smoke-ct-boost",
+      "map": "inferno",
+      "zone": "B",
+      "side": "T",
+      "type": "smoke",
+      "nom": "Smoke CT & Boost",
+      "cible": "CT & Boost",
+      "depuis": "Banane (Banana)",
+      "lancer": "Standing throw (immobile, relâcher)",
+      "clic": "Gauche",
+      "position": "Dans la rue de Banane, collé au mur de droite.",
+      "visee": "Bord droit de l'arche, sous les poutres en bois.",
+      "temps_vol_s": 5.1,
+      "notes": "Visée très précise (±0,06°). Même spot que la flash B site.",
+      "texte_carte": "CT & Boost Smoke from Banana (T) — Standing throw, left click. Spot & aim: Stand on the Banana street hugging the right wall; aim at the arch's right edge under the wooden beams. Lands: CT & Boost, 5.1 s, tolerance ±0.06°.",
+      "images": {
+        "position": "inferno/B/smoke-ct-boost/1_position.jpg",
+        "visee": "inferno/B/smoke-ct-boost/2_visee.jpg"
+      },
+      "source_screens": [
+        "20261116163456_1.jpg",
+        "20261116163630_1.jpg"
+      ],
+      "getpos": null,
+      "strategies": []
+    },
+    {
+      "id": "inferno-B-flash-b-site",
+      "map": "inferno",
+      "zone": "B",
+      "side": "T",
+      "type": "flash",
+      "nom": "Flash B site",
+      "cible": "B site",
+      "depuis": "Banane (Banana)",
+      "lancer": "Jumpthrow (maintenir, sauter et relâcher en même temps)",
+      "clic": "Gauche",
+      "position": "Dans Banane, contre le mur de droite, au niveau de l'arche au toit en bois.",
+      "visee": "Juste à droite de la moitié basse du « B » orange sur le muret.",
+      "temps_vol_s": 1.6,
+      "notes": "Même spot que la smoke CT & Boost.",
+      "texte_carte": "B Site Flash from Banana (T) — Jumpthrow, left click. Spot & aim: Stand in Banana by the right wall at the wooden-roofed arch; aim just right of the lower half of the orange 'B' on the half-wall. Lands: B Site, 1.6 s.",
+      "images": {
+        "position": "inferno/B/flash-b-site/1_position.jpg",
+        "visee": "inferno/B/flash-b-site/2_visee.jpg"
+      },
+      "source_screens": [
+        "20261116163456_1.jpg",
+        "20261116163724_1.jpg"
+      ],
+      "getpos": null,
+      "strategies": []
+    },
+    {
+      "id": "inferno-B-molo-1st-oranges",
+      "map": "inferno",
+      "zone": "B",
+      "side": "T",
+      "type": "molotov",
+      "nom": "Molo 1st Oranges",
+      "cible": "1st Oranges",
+      "depuis": "Voiture (Car)",
+      "lancer": "Jumpthrow (maintenir, sauter et relâcher en même temps)",
+      "clic": "Gauche",
+      "position": "À côté des tonneaux.",
+      "visee": "Coin supérieur gauche de la planche de contreplaqué appuyée.",
+      "temps_vol_s": 2.0,
+      "notes": "Spot partagé (10 lineups ici) : molo 2nd, flash B entry.",
+      "texte_carte": "1st Oranges Molotov from Car (T) — Jumpthrow, left click. Spot & aim: Stand beside the barrels, jumpthrow aimed at the upper left of the leaning plywood board. Lands: 1st Oranges, 2.0 s.",
+      "images": {
+        "position": "inferno/B/molo-1st-oranges/1_position.jpg",
+        "visee": "inferno/B/molo-1st-oranges/2_visee.jpg"
+      },
+      "source_screens": [
+        "20261116163738_1.jpg",
+        "20261116163746_1.jpg"
+      ],
+      "getpos": null,
+      "strategies": []
+    },
+    {
+      "id": "inferno-B-molo-2nd",
+      "map": "inferno",
+      "zone": "B",
+      "side": "T",
+      "type": "molotov",
+      "nom": "Molo 2nd",
+      "cible": "2nd",
+      "depuis": "Voiture (Car)",
+      "lancer": "Standing throw (immobile, relâcher)",
+      "clic": "Gauche",
+      "position": "À côté des tonneaux.",
+      "visee": "Bord du toit, juste à droite du petit pot de cheminée rouge et blanc.",
+      "temps_vol_s": 1.9,
+      "notes": "Visée très précise (±0,06°). Même spot que la molo 1st Oranges.",
+      "texte_carte": "2nd Molotov from Car (T) — Standing throw, left click. Spot & aim: Stand beside the barrels, aim at the roof edge just right of the small red-and-white chimney pot. Lands: 2nd, 1.9 s, tolerance ±0.06°.",
+      "images": {
+        "position": "inferno/B/molo-2nd/1_position.jpg",
+        "visee": "inferno/B/molo-2nd/2_visee.jpg"
+      },
+      "source_screens": [
+        "20261116163738_1.jpg",
+        "20261116164207_1.jpg"
+      ],
+      "getpos": null,
+      "strategies": []
+    },
+    {
+      "id": "inferno-B-flash-b-entry",
+      "map": "inferno",
+      "zone": "B",
+      "side": "CT",
+      "type": "flash",
+      "nom": "Flash B entry",
+      "cible": "B entry",
+      "depuis": "Voiture (Car)",
+      "lancer": "Standing throw (immobile, relâcher)",
+      "clic": "Gauche",
+      "position": "À Voiture, juste à droite des tonneaux et de la caisse en bois.",
+      "visee": "Pointe du poteau d'échafaudage incliné, à droite du poteau vertical.",
+      "temps_vol_s": 1.6,
+      "notes": "Même spot que la molo 1st Oranges.",
+      "texte_carte": "B Entry Flash from Banana (CT) — Standing throw, left click. Spot & aim: Stand at Car just right of the barrels and wooden crate; aim at the tip of the slanted scaffold pole right of the upright one. Lands: B Entry, 1.6 s.",
+      "images": {
+        "position": "inferno/B/flash-b-entry/1_position.jpg",
+        "visee": "inferno/B/flash-b-entry/2_visee.jpg"
+      },
+      "source_screens": [
+        "20261116163738_1.jpg",
+        "20261116164219_1.jpg"
+      ],
+      "getpos": null,
+      "strategies": []
+    },
+    {
+      "id": "inferno-A-flash-top-mid",
+      "map": "inferno",
+      "zone": "A",
+      "side": "T",
+      "type": "flash",
+      "nom": "Flash Top mid",
+      "cible": "Top mid",
+      "depuis": "Second milieu (Second Mid)",
+      "lancer": "Jumpthrow (maintenir, sauter et relâcher en même temps)",
+      "clic": "Gauche",
+      "position": "Contre le mur de gauche dans Second milieu, avant la grille pliante.",
+      "visee": "Juste en dessous de la lampe",
+      "temps_vol_s": 1.6,
+      "notes": "",
+      "texte_carte": "Top Mid Flash from Second Mid (T) — Jumpthrow, left click. Spot & aim: Stand by the left wall in Second Mid before the folding gate; aim just above the garage door's top-right corner, left of the 'A'. Lands: Top Mid, 1.6 s.",
+      "images": {
+        "position": "inferno/A/flash-top-mid/1_position.jpg",
+        "visee": "inferno/A/flash-top-mid/2_visee.jpg"
+      },
+      "source_screens": [
+        "20261116164250_1.jpg",
+        "20261116164259_1.jpg"
+      ],
+      "getpos": null,
+      "strategies": []
+    },
+    {
+      "id": "inferno-A-smoke-a-site",
+      "map": "inferno",
+      "zone": "A",
+      "side": "T",
+      "type": "smoke",
+      "nom": "Smoke A site",
+      "cible": "A site",
+      "depuis": "Milieu (Mid)",
+      "lancer": "Jumpthrow (maintenir, sauter et relâcher en même temps)",
+      "clic": "Gauche",
+      "position": "Le long du mur de gauche, celui avec la rambarde.",
+      "visee": "Juste à droite du coin du bâtiment, au-dessus de la porte en bois.",
+      "temps_vol_s": 6.3,
+      "notes": "Visée précise (±0,12°).",
+      "texte_carte": "A Site Smoke from Mid (T) — Jumpthrow, left click. Spot & aim: Stand along the left railing wall, aim just right of the building corner above the wooden door. Lands: A Site, 6.3 s, tolerance ±0.12°.",
+      "images": {
+        "position": "inferno/A/smoke-a-site/1_position.jpg",
+        "visee": "inferno/A/smoke-a-site/2_visee.jpg"
+      },
+      "source_screens": [
+        "20261116165349_1.jpg",
+        "20261116165358_1.jpg"
+      ],
+      "getpos": null,
+      "strategies": []
+    },
+    {
+      "id": "inferno-A-smoke-moto-second-mid",
+      "map": "inferno",
+      "zone": "A",
+      "side": "T",
+      "type": "smoke",
+      "nom": "Smoke Moto (Second mid)",
+      "cible": "Moto",
+      "depuis": "Second milieu (Second Mid)",
+      "lancer": "Jumpthrow (maintenir, sauter et relâcher en même temps)",
+      "clic": "Gauche",
+      "position": "Contre le poteau, près de la porte rouge.",
+      "visee": "Juste au-dessus du bout de l'avant-toit du bâtiment rouge.",
+      "temps_vol_s": 6.6,
+      "notes": "Visée très précise (±0,12°). Même spot que la smoke Long.",
+      "texte_carte": "Moto Smoke from Second Mid (T) — Jumpthrow, left click. Spot & aim: Stand by the pole near the red door, aim just above the end of the red building's roof eave. Lands: Moto, 6.6 s, tolerance ±0.12°.",
+      "images": {
+        "position": "inferno/A/smoke-moto-second-mid/1_position.jpg",
+        "visee": "inferno/A/smoke-moto-second-mid/2_visee.jpg"
+      },
+      "source_screens": [
+        "20261116165722_1.jpg",
+        "20261116165748_1.jpg"
+      ],
+      "getpos": null,
+      "strategies": []
+    },
+    {
+      "id": "inferno-A-smoke-long",
+      "map": "inferno",
+      "zone": "A",
+      "side": "T",
+      "type": "smoke",
+      "nom": "Smoke Long",
+      "cible": "Long",
+      "depuis": "Second milieu (Second Mid)",
+      "lancer": "Jumpthrow (maintenir, sauter et relâcher en même temps)",
+      "clic": "Gauche",
+      "position": "Contre le poteau, près de la porte rouge.",
+      "visee": "Sur le rebord juste sous le volet droit du bâtiment rouge.",
+      "temps_vol_s": 6.8,
+      "notes": "Visée très précise (±0,06°). Même spot que la smoke Moto (Second mid).",
+      "texte_carte": "Long Smoke from Second Mid (T) — Jumpthrow, left click. Spot & aim: Stand by the pole near the red door, aim at the ledge just under the right shutter of the red building. Lands: Long, 6.8 s, tolerance ±0.06°.",
+      "images": {
+        "position": "inferno/A/smoke-long/1_position.jpg",
+        "visee": "inferno/A/smoke-long/2_visee.jpg"
+      },
+      "source_screens": [
+        "20261116165722_1.jpg",
+        "20261116165801_1.jpg"
+      ],
+      "getpos": null,
+      "strategies": []
+    },
+    {
+      "id": "inferno-A-smoke-cart",
+      "map": "inferno",
+      "zone": "A",
+      "side": "T",
+      "type": "smoke",
+      "nom": "Smoke Cart",
+      "cible": "Cart",
+      "depuis": "Appartements (CT Apts)",
+      "lancer": "Standing throw (immobile, relâcher)",
+      "clic": "Gauche",
+      "position": "Contre le mur de gauche, à côté du radiateur.",
+      "visee": "Juste à droite de l'encadrement de la porte blanche au bout du couloir.",
+      "temps_vol_s": 3.7,
+      "notes": "Visée très précise (±0,06°).",
+      "texte_carte": "Cart Smoke from CT Apts (T) — Standing throw, left click. Spot & aim: Stand at the left wall by the radiator, aim just right of the white door frame at the corridor end. Lands: Cart, 3.7 s, tolerance ±0.06°.",
+      "images": {
+        "position": "inferno/A/smoke-cart/1_position.jpg",
+        "visee": "inferno/A/smoke-cart/2_visee.jpg"
+      },
+      "source_screens": [
+        "20261116170130_1.jpg",
+        "20261116170141_1.jpg"
+      ],
+      "getpos": null,
+      "strategies": []
+    },
+    {
+      "id": "inferno-A-smoke-moto-boiler",
+      "map": "inferno",
+      "zone": "A",
+      "side": "T",
+      "type": "smoke",
+      "nom": "Smoke Moto (Boiler)",
+      "cible": "Moto",
+      "depuis": "Milieu supérieur (Boiler)",
+      "lancer": "Standing throw (immobile, relâcher)",
+      "clic": "Gauche",
+      "position": "Dans l'encadrement de la porte, à côté du poteau en bois.",
+      "visee": "Dans le ciel juste au-dessus du bord du toit en tuiles, sous le soleil.",
+      "temps_vol_s": 6.2,
+      "notes": "Visée précise (±0,41°). Même spot que la molo Balcony.",
+      "texte_carte": "Moto Smoke from Boiler (T) — Standing throw, left click. Spot & aim: Stand in the doorway by the wooden post, aim at the sky just above the tiled roof edge, under the sun. Lands: Moto, 6.2 s, tolerance ±0.41°.",
+      "images": {
+        "position": "inferno/A/smoke-moto-boiler/1_position.jpg",
+        "visee": "inferno/A/smoke-moto-boiler/2_visee.jpg"
+      },
+      "source_screens": [
+        "20261116170425_1.jpg",
+        "20261116170459_1.jpg"
+      ],
+      "getpos": null,
+      "strategies": []
+    },
+    {
+      "id": "inferno-A-molo-balcony",
+      "map": "inferno",
+      "zone": "A",
+      "side": "T",
+      "type": "molotov",
+      "nom": "Molo Balcony",
+      "cible": "Balcony",
+      "depuis": "Milieu supérieur (Boiler)",
+      "lancer": "Standing throw (immobile, relâcher)",
+      "clic": "Gauche",
+      "position": "Dans l'encadrement de la porte du Boiler, à côté du poteau en bois.",
+      "visee": "Bord droit du mur en pierre, sous l'avant-toit.",
+      "temps_vol_s": 2.0,
+      "notes": "Visée très précise (±0,06°). Même spot que la smoke Moto (Boiler).",
+      "texte_carte": "Balcony Molotov from Boiler (T) — Standing throw, left click. Spot & aim: Stand in the Boiler doorway beside the wooden post; aim at the stone wall's right edge under the roof eave. Lands: Balcony, 2.0 s, tolerance ±0.06°.",
+      "images": {
+        "position": "inferno/A/molo-balcony/1_position.jpg",
+        "visee": "inferno/A/molo-balcony/2_visee.jpg"
+      },
+      "source_screens": [
+        "20261116170425_1.jpg",
+        "20261116170502_1.jpg"
+      ],
+      "getpos": null,
+      "strategies": []
+    },
+    {
+      "id": "inferno-A-flash-a-god",
+      "map": "inferno",
+      "zone": "A",
+      "side": "CT",
+      "type": "flash",
+      "nom": "Flash A God",
+      "cible": "A God",
+      "depuis": "Milieu supérieur (Top Mid)",
+      "lancer": "Standing throw (immobile, relâcher)",
+      "clic": "Gauche",
+      "position": "À Top mid, à côté de la porte du Boiler.",
+      "visee": "Juste à droite du coin du mur en pierre, une main au-dessus des tonneaux du camion bleu.",
+      "temps_vol_s": 1.6,
+      "notes": "Visée précise (±0,39°).",
+      "texte_carte": "A God Flash from Top Mid (CT) — Standing throw, left click. Spot & aim: Stand at Top Mid next to the Boiler doorway; aim just right of the stone wall corner, a hand above the barrels on the blue truck. Lands: A God, 1.6 s, tolerance ±0.39°.",
+      "images": {
+        "position": "inferno/A/flash-a-god/1_position.jpg",
+        "visee": "inferno/A/flash-a-god/2_visee.jpg"
+      },
+      "source_screens": [
+        "20261116170826_1.jpg",
+        "20261116171003_1.jpg"
+      ],
+      "getpos": null,
+      "strategies": []
     }
   ]
 }
