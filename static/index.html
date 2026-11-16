@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lineups CS2</title>
+<style>
+  :root {
+    --bg: #0f1114; --panel: #171a1f; --panel2: #1e2228; --line: #2a2f37;
+    --text: #e8e6e1; --muted: #8b9099; --accent: #e8a33d;
+    --smoke: #9aa4b1; --molotov: #e8673d; --flash: #f2d14b; --he: #d64545; --decoy: #6fae7a;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text);
+         font: 15px/1.45 "Segoe UI", system-ui, sans-serif; height: 100vh; display: flex; flex-direction: column; }
+  header { display: flex; gap: 16px; align-items: center; padding: 10px 16px;
+           background: var(--panel); border-bottom: 1px solid var(--line); flex-wrap: wrap; }
+  header h1 { font-size: 16px; margin: 0; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); }
+  select, button, input, textarea { font: inherit; color: var(--text); background: var(--panel2);
+           border: 1px solid var(--line); border-radius: 6px; }
+  select { padding: 6px 10px; text-transform: capitalize; }
+  .tabs { display: flex; gap: 4px; }
+  .tabs button { padding: 6px 14px; cursor: pointer; }
+  .tabs button.on { background: var(--accent); color: #111; border-color: var(--accent); font-weight: 600; }
+  main { flex: 1; display: grid; grid-template-columns: 300px 1fr; min-height: 0; }
+  #list { overflow-y: auto; border-right: 1px solid var(--line); padding: 8px; }
+  .item { padding: 10px 12px; border-radius: 8px; cursor: pointer; border: 1px solid transparent; margin-bottom: 4px; }
+  .item:hover { background: var(--panel); }
+  .item.on { background: var(--panel2); border-color: var(--accent); }
+  .item .t { font-weight: 600; display: flex; align-items: center; gap: 8px; }
+  .item .s { color: var(--muted); font-size: 13px; }
+  .dot { width: 10px; height: 10px; border-radius: 50%; flex: none; }
+  .empty { color: var(--muted); padding: 24px; text-align: center; }
+  #detail { overflow-y: auto; padding: 16px 20px; }
+  .head { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; margin-bottom: 12px; }
+  .head h2 { margin: 0; font-size: 22px; }
+  .badge { padding: 3px 10px; border-radius: 999px; background: var(--panel2); border: 1px solid var(--line); font-size: 13px; }
+  .badge.big { font-size: 15px; font-weight: 700; color: #111; border: none; }
+  .imgs { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 14px; }
+  figure { margin: 0; background: var(--panel); border-radius: 8px; overflow: hidden; border: 1px solid var(--line); }
+  figure img { width: 100%; display: block; cursor: zoom-in; }
+  figcaption { padding: 6px 10px; font-size: 12px; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); }
+  .info { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .box { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 10px 14px; }
+  .box h3 { margin: 0 0 4px; font-size: 12px; text-transform: uppercase; letter-spacing: .08em; color: var(--accent); }
+  .box p { margin: 0; white-space: pre-wrap; }
+  details { margin-top: 12px; color: var(--muted); font-size: 13px; }
+  .actions { margin-left: auto; display: flex; gap: 8px; }
+  .actions button, form button { padding: 6px 14px; cursor: pointer; }
+  button.primary { background: var(--accent); color: #111; border-color: var(--accent); font-weight: 600; }
+  form { display: grid; grid-template-columns: 1fr 1fr; gap: 10px 14px; }
+  form label { display: flex; flex-direction: column; gap: 4px; font-size: 12px; color: var(--muted);
+               text-transform: uppercase; letter-spacing: .06em; }
+  form .full { grid-column: 1 / -1; }
+  form input, form textarea, form select { padding: 7px 9px; text-transform: none; }
+  form textarea { min-height: 70px; resize: vertical; }
+  #lightbox { position: fixed; inset: 0; background: rgba(0,0,0,.92); display: none;
+              align-items: center; justify-content: center; cursor: zoom-out; z-index: 10; }
+  #lightbox img { max-width: 96vw; max-height: 96vh; }
+  #toast { position: fixed; bottom: 16px; right: 16px; background: var(--panel2); border: 1px solid var(--accent);
+           padding: 8px 14px; border-radius: 8px; opacity: 0; transition: opacity .2s; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Lineups CS2</h1>
+  <select id="map"></select>
+  <div class="tabs" id="zones"></div>
+  <div class="tabs" id="sides"></div>
+</header>
+<main>
+  <div id="list"></div>
+  <div id="detail"><div class="empty">Choisis un stuff à gauche.</div></div>
+</main>
+<div id="lightbox"><img alt=""></div>
+<div id="toast"></div>
+
+<script>
+const ZONE_ORDER = ["A", "Mid", "B"];
+const TYPES = { smoke: "Smoke", molotov: "Molotov", flash: "Flash", he: "HE", decoy: "Decoy" };
+let db = { lineups: [] };
+let state = { map: null, zone: null, side: "Tous", selected: null, editing: false };
+
+// Mémorise les filtres (confort uniquement, ignoré si le stockage échoue)
+try { Object.assign(state, JSON.parse(localStorage.getItem("cs2-lineups-state") || "{}"), { editing: false }); } catch {}
+function persist() { try { localStorage.setItem("cs2-lineups-state", JSON.stringify(state)); } catch {} }
+
+const $ = s => document.querySelector(s);
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+const color = t => `var(--${TYPES[t] ? t : "smoke"})`;
+
+async function load() {
+  db = await (await fetch("/api/lineups")).json();
+  const maps = [...new Set(db.lineups.map(l => l.map))].sort();
+  if (!maps.includes(state.map)) state.map = maps[0] || null;
+  $("#map").innerHTML = maps.map(m => `<option ${m === state.map ? "selected" : ""}>${esc(m)}</option>`).join("");
+  render();
+}
+
+function filtered() {
+  return db.lineups.filter(l => l.map === state.map && l.zone === state.zone &&
+    (state.side === "Tous" || l.side === state.side));
+}
+
+function render() {
+  const onMap = db.lineups.filter(l => l.map === state.map);
+  const zones = [...new Set(onMap.map(l => l.zone))]
+    .sort((a, b) => (ZONE_ORDER.indexOf(a) + 99) % 99 - (ZONE_ORDER.indexOf(b) + 99) % 99);
+  if (!zones.includes(state.zone)) state.zone = zones[0] || null;
+  $("#zones").innerHTML = zones.map(z =>
+    `<button class="${z === state.zone ? "on" : ""}" data-zone="${esc(z)}">${esc(z)}</button>`).join("");
+  $("#sides").innerHTML = ["Tous", "T", "CT"].map(s =>
+    `<button class="${s === state.side ? "on" : ""}" data-side="${s}">${s}</button>`).join("");
+
+  const items = filtered();
+  $("#list").innerHTML = items.length ? items.map(l => `
+    <div class="item ${l.id === state.selected ? "on" : ""}" data-id="${esc(l.id)}">
+      <div class="t"><span class="dot" style="background:${color(l.type)}"></span>${esc(l.nom)}</div>
+      <div class="s">${esc(l.depuis)} → ${esc(l.cible)} · ${esc((l.lancer || "").split(" (")[0])}</div>
+    </div>`).join("") : `<div class="empty">Aucun stuff ici.</div>`;
+
+  const l = db.lineups.find(x => x.id === state.selected);
+  if (!l || !items.includes(l)) { $("#detail").innerHTML = `<div class="empty">Choisis un stuff à gauche.</div>`; persist(); return; }
+  $("#detail").innerHTML = state.editing ? editView(l) : detailView(l);
+  persist();
+}
+
+function detailView(l) {
+  return `
+    <div class="head">
+      <span class="badge big" style="background:${color(l.type)}">${esc(TYPES[l.type] || l.type)}</span>
+      <h2>${esc(l.nom)}</h2>
+      <span class="badge">${esc(l.side)}</span>
+      <div class="actions"><button id="edit">Modifier</button></div>
+    </div>
+    <div class="head">
+      <span class="badge big" style="background:var(--accent)">${esc(l.lancer)}</span>
+      <span class="badge">Clic : ${esc(l.clic)}</span>
+      ${l.temps_vol_s ? `<span class="badge">${esc(l.temps_vol_s)} s</span>` : ""}
+      <span class="badge">${esc(l.depuis)} → ${esc(l.cible)}</span>
+    </div>
+    <div class="imgs">
+      <figure><img src="/screens/${esc(l.images?.position)}" alt="Position"><figcaption>1 · Position</figcaption></figure>
+      <figure><img src="/screens/${esc(l.images?.visee)}" alt="Visée"><figcaption>2 · Visée</figcaption></figure>
+    </div>
+    <div class="info">
+      <div class="box"><h3>Position</h3><p>${esc(l.position)}</p></div>
+      <div class="box"><h3>Visée</h3><p>${esc(l.visee)}</p></div>
+      ${l.notes ? `<div class="box" style="grid-column:1/-1"><h3>Notes</h3><p>${esc(l.notes)}</p></div>` : ""}
+    </div>
+    ${l.texte_carte ? `<details><summary>Texte d'origine de la map</summary><p>${esc(l.texte_carte)}</p></details>` : ""}`;
+}
+
+function editView(l) {
+  const f = (k, label, cls = "") => `<label class="${cls}">${label}<input name="${k}" value="${esc(l[k])}"></label>`;
+  const t = (k, label) => `<label class="full">${label}<textarea name="${k}">${esc(l[k])}</textarea></label>`;
+  return `
+    <div class="head"><h2>Modifier : ${esc(l.nom)}</h2></div>
+    <form id="form">
+      ${f("nom", "Nom")}
+      <label>Type<select name="type">${Object.entries(TYPES).map(([k, v]) =>
+        `<option value="${k}" ${k === l.type ? "selected" : ""}>${v}</option>`).join("")}</select></label>
+      ${f("depuis", "Depuis")} ${f("cible", "Cible")}
+      ${f("lancer", "Lancer")} ${f("clic", "Clic")}
+      ${f("zone", "Zone")} ${f("side", "Side (T / CT)")}
+      ${f("temps_vol_s", "Temps de vol (s)")}
+      ${t("position", "Position")} ${t("visee", "Visée")} ${t("notes", "Notes")}
+      <div class="full actions" style="margin:0">
+        <button type="button" id="cancel">Annuler</button>
+        <button type="submit" class="primary">Enregistrer</button>
+      </div>
+    </form>`;
+}
+
+async function save(form) {
+  const data = Object.fromEntries(new FormData(form));
+  const n = parseFloat(String(data.temps_vol_s).replace(",", "."));
+  data.temps_vol_s = Number.isFinite(n) ? n : null;
+  const res = await fetch(`/api/lineups/${encodeURIComponent(state.selected)}`, {
+    method: "PUT", headers: { "Content-Type": "application/json" }, body: JSON.stringify(data) });
+  if (!res.ok) return toast("Échec de l'enregistrement");
+  const updated = await res.json();
+  db.lineups = db.lineups.map(x => x.id === updated.id ? updated : x);
+  state.zone = updated.zone; state.editing = false;
+  render(); toast("Enregistré");
+}
+
+function toast(msg) {
+  const el = $("#toast"); el.textContent = msg; el.style.opacity = 1;
+  clearTimeout(toast.t); toast.t = setTimeout(() => el.style.opacity = 0, 1500);
+}
+
+// Événements
+$("#map").onchange = e => { state.map = e.target.value; state.selected = null; state.editing = false; render(); };
+document.addEventListener("click", e => {
+  const z = e.target.closest("[data-zone]"), s = e.target.closest("[data-side]"), it = e.target.closest(".item");
+  if (z) { state.zone = z.dataset.zone; state.editing = false; render(); }
+  else if (s) { state.side = s.dataset.side; render(); }
+  else if (it) { state.selected = it.dataset.id; state.editing = false; render(); }
+  else if (e.target.id === "edit") { state.editing = true; render(); }
+  else if (e.target.id === "cancel") { state.editing = false; render(); }
+  else if (e.target.matches("figure img")) { $("#lightbox img").src = e.target.src; $("#lightbox").style.display = "flex"; }
+  else if (e.target.closest("#lightbox")) { $("#lightbox").style.display = "none"; }
+});
+document.addEventListener("submit", e => { e.preventDefault(); save(e.target); });
+document.addEventListener("keydown", e => {
+  if (e.key === "Escape") { $("#lightbox").style.display = "none"; if (state.editing) { state.editing = false; render(); } return; }
+  if (state.editing || !["ArrowDown", "ArrowUp"].includes(e.key)) return;
+  const items = filtered(); if (!items.length) return;
+  const i = items.findIndex(l => l.id === state.selected);
+  const next = e.key === "ArrowDown" ? Math.min(i + 1, items.length - 1) : Math.max(i - 1, 0);
+  state.selected = items[i < 0 ? 0 : next].id; e.preventDefault(); render();
+});
+
+load();
+</script>
+</body>
+</html>
