@@ -1,0 +1,12 @@
+BOITE DE DEPOT - screens non traites
+
+Deposez vos screens en vrac (.jpg / .png) dans le dossier de la map
+concernee : dust2, mirage, anubis, ancient, inferno, nuke, cache.
+Pas besoin de les renommer ni de les classer.
+
+Chaque lineup = 2 screens : la position puis la visee. Prenez-les dans cet
+ordre pour qu'on puisse les associer facilement.
+
+Ensuite : git add data/inbox, git commit, git push.
+Le proprietaire trie dans data/screens/ et ajoute l'entree dans
+data/lineups.json (une fois traites, les screens sortent de ce dossier).
