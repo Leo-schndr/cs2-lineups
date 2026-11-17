@@ -939,16 +939,16 @@
       "map": "dust2",
       "zone": "Mid",
       "side": "CT",
-      "type": "molotov",
-      "nom": "Molo Mid (lurk)",
+      "type": "smoke",
+      "nom": "Smoke CT Mid to B",
       "cible": "Mid",
       "depuis": "Mid — Xbox",
-      "lancer": "Standing throw (immobile, relâcher)",
+      "lancer": "Crouch Jumpthrow",
       "clic": "Gauche",
       "position": "Contre la Xbox, à côté du buisson sec.",
-      "visee": "Sur le bord supérieur de la bâche, un peu à droite de son coin arrondi en haut à gauche.",
-      "temps_vol_s": 2.0,
-      "notes": "",
+      "visee": "Sur le bord de la palette à coté du clou ",
+      "temps_vol_s": 2,
+      "notes": "C'est bien une smoke ne pas se fier au visuel ",
       "texte_carte": "Mid Molotov from Mid (lurk) (CT) — Standing throw, left click. Spot & aim: Stand against Xbox by the dry bush; aim on the tarp's top edge, a short way right of its rounded upper-left corner. Lands: Mid, 2.0 s.",
       "images": {
         "position": "dust2/Mid/molo-mid-lurk/1_position.jpg",
@@ -1127,7 +1127,7 @@
       "id": "dust2-A-smoke-cross-long-doors",
       "map": "dust2",
       "zone": "A",
-      "side": "CT",
+      "side": "T",
       "type": "smoke",
       "nom": "Smoke Cross (portes Long)",
       "cible": "Cross",
@@ -1136,7 +1136,7 @@
       "clic": "Gauche",
       "position": "Sur le tonneau bleu juste à l'intérieur des portes de Long.",
       "visee": "Sur le fil électrique isolé dans le ciel, à mi-chemin entre les deux lampadaires.",
-      "temps_vol_s": 9.0,
+      "temps_vol_s": 9,
       "notes": "Même spot que la molo A Car.",
       "texte_carte": "Cross Smoke from Long Doors (CT) — Standing throw, left click. Spot & aim: Stand on the blue barrel just inside Long Doors; aim at the lone power line in the sky, midway between the two street lamps. Lands: Cross, 9.0 s.",
       "images": {
@@ -1227,6 +1227,249 @@
       "source_screens": [
         "20261117151650_1.jpg",
         "20261117151658_1.jpg"
+      ],
+      "getpos": null,
+      "strategies": []
+    },
+    {
+      "id": "mirage-Mid-flash-top-mid-maison",
+      "map": "mirage",
+      "zone": "Mid",
+      "side": "T",
+      "type": "flash",
+      "nom": "Flash Top mid",
+      "cible": "Top mid",
+      "depuis": "Maison (Apartments ramp)",
+      "lancer": "Jumpthrow (maintenir, sauter et relâcher en même temps)",
+      "clic": "Gauche",
+      "position": "Sur le perron, à côté de la chaise en bois.",
+      "visee": "Sur le crépi sous la deuxième console, au-dessus de la lanterne.",
+      "temps_vol_s": 1.6,
+      "notes": "Même spot que la flash Mid (Cart).",
+      "texte_carte": "Top Mid Flash from Apartments Ramp (T) — Jumpthrow, left click. Spot & aim: Stand on the porch by the wooden chair, aim at the plaster below the second corbel, above the lantern. Lands: Top Mid, 1.6 s.",
+      "images": {
+        "position": "mirage/Mid/flash-top-mid-maison/1_position.jpg",
+        "visee": "mirage/Mid/flash-top-mid-maison/2_visee.jpg"
+      },
+      "source_screens": [
+        "20261117162544_1.jpg",
+        "20261117162605_1.jpg"
+      ],
+      "getpos": null,
+      "strategies": []
+    },
+    {
+      "id": "mirage-Mid-flash-mid-cart",
+      "map": "mirage",
+      "zone": "Mid",
+      "side": "T",
+      "type": "flash",
+      "nom": "Flash Mid",
+      "cible": "Mid",
+      "depuis": "Maison (Apartments ramp)",
+      "lancer": "Jumpthrow (maintenir, sauter et relâcher en même temps)",
+      "clic": "Gauche",
+      "position": "Sur le perron, à côté de la chaise en bois.",
+      "visee": "Bout droit du rebord de la jardinière sur le mur bleu.",
+      "temps_vol_s": 1.6,
+      "notes": "Même spot que la flash Top mid.",
+      "texte_carte": "Mid Flash from Cart (T) — Jumpthrow, left click. Spot & aim: Stand on the porch by the wooden chair, aim at the right end of the flower box ledge on the blue wall. Lands: Mid, 1.6 s.",
+      "images": {
+        "position": "mirage/Mid/flash-mid-cart/1_position.jpg",
+        "visee": "mirage/Mid/flash-mid-cart/2_visee.jpg"
+      },
+      "source_screens": [
+        "20261117162544_1.jpg",
+        "20261117162637_1.jpg"
+      ],
+      "getpos": null,
+      "strategies": []
+    },
+    {
+      "id": "mirage-Mid-smoke-inside-connector",
+      "map": "mirage",
+      "zone": "Mid",
+      "side": "T",
+      "type": "smoke",
+      "nom": "Smoke Inside Connector",
+      "cible": "Inside Connector",
+      "depuis": "Milieu supérieur (charrette)",
+      "lancer": "Standing throw (immobile, relâcher)",
+      "clic": "Gauche",
+      "position": "Entre les piles de cartons, à côté de la charrette.",
+      "visee": "Pointe de la palme de droite de la couronne du palmier.",
+      "temps_vol_s": 7.6,
+      "notes": "Visée précise (±0,13°). Spot partagé (5 lineups) : flash Connector, smoke B Short.",
+      "texte_carte": "Inside Connector Smoke from Cart (T) — Standing throw, left click. Spot & aim: Stand between the box stacks by the cart, aim at the right frond tip of the palm crown. Lands: Inside Connector, 7.6 s, tolerance ±0.13°.",
+      "images": {
+        "position": "mirage/Mid/smoke-inside-connector/1_position.jpg",
+        "visee": "mirage/Mid/smoke-inside-connector/2_visee.jpg"
+      },
+      "source_screens": [
+        "20261117162826_1.jpg",
+        "20261117162846_1.jpg"
+      ],
+      "getpos": null,
+      "strategies": []
+    },
+    {
+      "id": "mirage-Mid-flash-connector",
+      "map": "mirage",
+      "zone": "Mid",
+      "side": "T",
+      "type": "flash",
+      "nom": "Flash Connector",
+      "cible": "Connector",
+      "depuis": "Milieu supérieur (charrette)",
+      "lancer": "Standing throw (immobile, relâcher)",
+      "clic": "Gauche",
+      "position": "Entre les piles de cartons, derrière la charrette.",
+      "visee": "Haut du poteau en bois de gauche, au niveau de la ligature de la poutre.",
+      "temps_vol_s": 1.6,
+      "notes": "Même spot que la smoke Inside Connector.",
+      "texte_carte": "Connector Flash from Mid (T) — Standing throw, left click. Spot & aim: Stand between the box stacks behind the cart, aim at the top of the left wooden post at the beam lashing. Lands: Connector, 1.6 s.",
+      "images": {
+        "position": "mirage/Mid/flash-connector/1_position.jpg",
+        "visee": "mirage/Mid/flash-connector/2_visee.jpg"
+      },
+      "source_screens": [
+        "20261117162826_1.jpg",
+        "20261117162853_1.jpg"
+      ],
+      "getpos": null,
+      "strategies": []
+    },
+    {
+      "id": "mirage-B-smoke-b-short-cart",
+      "map": "mirage",
+      "zone": "B",
+      "side": "T",
+      "type": "smoke",
+      "nom": "Smoke B Short (Cart)",
+      "cible": "B Short",
+      "depuis": "Milieu supérieur (charrette)",
+      "lancer": "Standing throw (immobile, relâcher)",
+      "clic": "Gauche",
+      "position": "Entre les piles de cartons, derrière la charrette.",
+      "visee": "Juste au-dessus du haut du tonneau, sous la poutre en bois.",
+      "temps_vol_s": 4.0,
+      "notes": "Même spot que la smoke Inside Connector.",
+      "texte_carte": "B Short Smoke from Cart (T) — Standing throw, left click. Spot & aim: Stand between the box stacks behind the cart, aim just above the barrel top under the wooden beam. Lands: B Short, 4.0 s.",
+      "images": {
+        "position": "mirage/B/smoke-b-short-cart/1_position.jpg",
+        "visee": "mirage/B/smoke-b-short-cart/2_visee.jpg"
+      },
+      "source_screens": [
+        "20261117162826_1.jpg",
+        "20261117162857_1.jpg"
+      ],
+      "getpos": null,
+      "strategies": []
+    },
+    {
+      "id": "mirage-Mid-molo-connector",
+      "map": "mirage",
+      "zone": "Mid",
+      "side": "T",
+      "type": "molotov",
+      "nom": "Molo Connector",
+      "cible": "Connector",
+      "depuis": "Milieu supérieur (Top Mid)",
+      "lancer": "Standing throw (immobile, relâcher)",
+      "clic": "Gauche",
+      "position": "Sur la bordure du trottoir, contre le mur bleu de Top Mid.",
+      "visee": "Avant-toit en tuiles de la maison blanche du fond, juste au-dessus à droite de sa fenêtre de droite.",
+      "temps_vol_s": 1.8,
+      "notes": "Visée très précise (±0,10°). Sur ton screen, la visée est décalée de 0,57° (trop haut) : vise un poil plus bas.",
+      "texte_carte": "Connector Molotov from Top Mid (T) — Standing throw, left click. Spot & aim: Stand on the curb by the blue wall in Top Mid; aim at the far white house's tiled eave, just above-right of its right window. Lands: Connector, 1.8 s, tolerance ±0.10°.",
+      "images": {
+        "position": "mirage/Mid/molo-connector/1_position.jpg",
+        "visee": "mirage/Mid/molo-connector/2_visee.jpg"
+      },
+      "source_screens": [
+        "20261117163341_1.jpg",
+        "20261117163346_1.jpg"
+      ],
+      "getpos": null,
+      "strategies": []
+    },
+    {
+      "id": "mirage-A-molo-sandwich",
+      "map": "mirage",
+      "zone": "A",
+      "side": "T",
+      "type": "molotov",
+      "nom": "Molo Sandwich",
+      "cible": "Sandwich",
+      "depuis": "Ruelle du palais (Palace Alley)",
+      "lancer": "Standing throw (immobile, relâcher)",
+      "clic": "Gauche",
+      "position": "Sur la passerelle surélevée au-dessus de la ruelle du palais.",
+      "visee": "Haut du mur en briques, à mi-chemin entre son bloc surélevé et la maison blanche.",
+      "temps_vol_s": 2.0,
+      "notes": "",
+      "texte_carte": "Sandwich Molotov from Palace Alley (T) — Standing throw, left click. Spot & aim: Stand on the raised walkway over Palace Alley; aim at the brick wall's top, midway from its raised block to the white house. Lands: Sandwich, 2.0 s.",
+      "images": {
+        "position": "mirage/A/molo-sandwich/1_position.jpg",
+        "visee": "mirage/A/molo-sandwich/2_visee.jpg"
+      },
+      "source_screens": [
+        "20261117163448_1.jpg",
+        "20261117163453_1.jpg"
+      ],
+      "getpos": null,
+      "strategies": []
+    },
+    {
+      "id": "mirage-B-smoke-b-short-house",
+      "map": "mirage",
+      "zone": "B",
+      "side": "T",
+      "type": "smoke",
+      "nom": "Smoke B Short (Ruelle arrière)",
+      "cible": "B Short",
+      "depuis": "Ruelle arrière (House)",
+      "lancer": "Standing throw (immobile, relâcher)",
+      "clic": "Gauche",
+      "position": "Le long du mur beige sur ta droite.",
+      "visee": "Sur le câble, une main à gauche du coin supérieur du minaret.",
+      "temps_vol_s": 6.8,
+      "notes": "Visée très précise (±0,06°). Spot partagé (7 lineups) : smoke Kitchen Window.",
+      "texte_carte": "B Short Smoke from House (T) — Standing throw, left click. Spot & aim: Stand along the beige wall on your right, aim at the cable a hand-width left of the minaret's top corner. Lands: B Short, 6.8 s, tolerance ±0.06°.",
+      "images": {
+        "position": "mirage/B/smoke-b-short-house/1_position.jpg",
+        "visee": "mirage/B/smoke-b-short-house/2_visee.jpg"
+      },
+      "source_screens": [
+        "20261117164202_1.jpg",
+        "20261117164212_1.jpg"
+      ],
+      "getpos": null,
+      "strategies": []
+    },
+    {
+      "id": "mirage-B-smoke-kitchen-window",
+      "map": "mirage",
+      "zone": "B",
+      "side": "T",
+      "type": "smoke",
+      "nom": "Smoke Kitchen Window",
+      "cible": "Kitchen Window",
+      "depuis": "Ruelle arrière (B Apartments)",
+      "lancer": "Jumpthrow (maintenir, sauter et relâcher en même temps)",
+      "clic": "Gauche",
+      "position": "Le long du mur beige sur ta droite.",
+      "visee": "Bord supérieur du minaret, juste au-dessus du câble.",
+      "temps_vol_s": 7.2,
+      "notes": "Visée très précise (±0,10°). Sur ton screen, la visée est décalée de 0,15° : vise un poil plus bas et à gauche. Même spot que la smoke B Short (Ruelle arrière).",
+      "texte_carte": "Kitchen Window Smoke from B Apartments (T) — Jumpthrow, left click. Spot & aim: Stand along the beige wall on your right, aim at the top edge of the minaret just above the cable. Lands: Kitchen Window, 7.2 s, tolerance ±0.10°.",
+      "images": {
+        "position": "mirage/B/smoke-kitchen-window/1_position.jpg",
+        "visee": "mirage/B/smoke-kitchen-window/2_visee.jpg"
+      },
+      "source_screens": [
+        "20261117164202_1.jpg",
+        "20261117164214_1.jpg"
       ],
       "getpos": null,
       "strategies": []
