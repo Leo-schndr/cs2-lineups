@@ -663,6 +663,573 @@
       ],
       "getpos": null,
       "strategies": []
+    },
+    {
+      "id": "dust2-B-smoke-b-cutoff",
+      "map": "dust2",
+      "zone": "B",
+      "side": "CT",
+      "type": "smoke",
+      "nom": "Smoke B cut-off",
+      "cible": "B site cut-off (B Doors)",
+      "depuis": "Portes de B (B Doors)",
+      "lancer": "Standing throw (immobile, relâcher)",
+      "clic": "Gauche",
+      "position": "À côté du battant ouvert des portes B, sur ta gauche.",
+      "visee": "Juste au-dessus de la pointe de palme qui dépasse du haut du mur.",
+      "temps_vol_s": 5.9,
+      "notes": "",
+      "texte_carte": "B Site Cut-off Smoke from B Doors (CT) — Standing throw, left click. Spot & aim: Stand by the open B Doors leaf on your left; aim just above the palm frond tip peeking over the wall top. Lands: B site cut-off (B Doors), 5.9 s, tolerance ±0.50°.",
+      "images": {
+        "position": "dust2/B/smoke-b-cutoff/1_position.jpg",
+        "visee": "dust2/B/smoke-b-cutoff/2_visee.jpg"
+      },
+      "source_screens": [
+        "20261117141333_1.jpg",
+        "20261117141351_1.jpg"
+      ],
+      "getpos": null,
+      "strategies": []
+    },
+    {
+      "id": "dust2-B-flash-anti-rush-car",
+      "map": "dust2",
+      "zone": "B",
+      "side": "CT",
+      "type": "flash",
+      "nom": "Flash anti-rush B (voiture)",
+      "cible": "Sortie de tunnel",
+      "depuis": "Site de bombe B (voiture)",
+      "lancer": "Jumpthrow (maintenir, sauter et relâcher en même temps)",
+      "clic": "Gauche",
+      "position": "Entre la voiture blanche et le mur en plâtre.",
+      "visee": "Coin supérieur gauche de la grande tôle ondulée.",
+      "temps_vol_s": 1.6,
+      "notes": "Trajectoire courte, pète pile à la sortie du tunnel : stoppe un rush B.",
+      "texte_carte": "B Car Anti-Rush Flash (CT) — Jumpthrow, left click. Spot & aim: Stand between the white car and the plaster wall; aim at the top-left corner of the tall corrugated sheet. Lands: short trajectory, pops right at the tunnel exit - stops a B rush, 1.6 s.",
+      "images": {
+        "position": "dust2/B/flash-anti-rush-car/1_position.jpg",
+        "visee": "dust2/B/flash-anti-rush-car/2_visee.jpg"
+      },
+      "source_screens": [
+        "20261117141532_1.jpg",
+        "20261117141539_1.jpg"
+      ],
+      "getpos": null,
+      "strategies": []
+    },
+    {
+      "id": "dust2-B-molo-b-fence",
+      "map": "dust2",
+      "zone": "B",
+      "side": "T",
+      "type": "molotov",
+      "nom": "Molo B close & fence",
+      "cible": "B close gauche + fence",
+      "depuis": "Tunnel supérieur (Upper Tunnels)",
+      "lancer": "Standing throw (immobile, relâcher)",
+      "clic": "Gauche",
+      "position": "Épaule gauche contre le mur.",
+      "visee": "À travers l'arche, sur le bord gauche de l'ouverture lumineuse du fond, sous la lampe.",
+      "temps_vol_s": 1.6,
+      "notes": "Visée très précise (±0,10°).",
+      "texte_carte": "B close & fence Molotov from Tunnels (T) — Standing throw, left click. Spot & aim: Left shoulder to the wall, aim through the arch at the left edge of the bright far opening, under the lamp. Lands: B close left + fence, 1.6 s, tolerance ±0.10°.",
+      "images": {
+        "position": "dust2/B/molo-b-fence/1_position.jpg",
+        "visee": "dust2/B/molo-b-fence/2_visee.jpg"
+      },
+      "source_screens": [
+        "20261117141548_1.jpg",
+        "20261117141623_1.jpg"
+      ],
+      "getpos": null,
+      "strategies": []
+    },
+    {
+      "id": "dust2-B-flash-b-site-upper",
+      "map": "dust2",
+      "zone": "B",
+      "side": "T",
+      "type": "flash",
+      "nom": "Flash B site",
+      "cible": "B site",
+      "depuis": "Tunnel supérieur 2 (Upper Tunnels 2)",
+      "lancer": "Jumpthrow (maintenir, sauter et relâcher en même temps)",
+      "clic": "Gauche",
+      "position": "Dans le tunnel supérieur, contre le mur de droite, au niveau du gros pilier en pierre.",
+      "visee": "Juste au-dessus de l'arche du fond, sous la vigne.",
+      "temps_vol_s": 1.6,
+      "notes": "",
+      "texte_carte": "B Site Flash from Upper Tunnels 2 (T) — Jumpthrow, left click. Spot & aim: Stand in Upper Tunnels at the right wall, level with the big stone pillar; aim just above the far arch, under the vines. Lands: B Site, 1.6 s.",
+      "images": {
+        "position": "dust2/B/flash-b-site-upper/1_position.jpg",
+        "visee": "dust2/B/flash-b-site-upper/2_visee.jpg"
+      },
+      "source_screens": [
+        "20261117142032_1.jpg",
+        "20261117142038_1.jpg"
+      ],
+      "getpos": null,
+      "strategies": []
+    },
+    {
+      "id": "dust2-B-flash-upper-solo",
+      "map": "dust2",
+      "zone": "B",
+      "side": "T",
+      "type": "flash",
+      "nom": "Flash Mid Xbox",
+      "cible": "Upper tunnels",
+      "depuis": "Tunnel inférieur (Lower Tunnels)",
+      "lancer": "Standing throw (immobile, relâcher)",
+      "clic": "Gauche",
+      "position": "Dans le coin du fond du tunnel inférieur (murs derrière toi et à droite).",
+      "visee": "Au dessus de la caisse, voir viseur",
+      "temps_vol_s": 1.6,
+      "notes": "",
+      "texte_carte": "Upper Solo Flash from Lower Tunnels (CT) — Standing throw, left click. Spot & aim: Stand in Lower Tunnels' back corner (walls behind and right); aim into the tall arch by the big wall, a third below its top. Lands: Upper, 1.6 s.",
+      "images": {
+        "position": "dust2/B/flash-upper-solo/1_position.jpg",
+        "visee": "dust2/B/flash-upper-solo/2_visee.jpg"
+      },
+      "source_screens": [
+        "20261117144447_1.jpg",
+        "20261117144456_1.jpg"
+      ],
+      "getpos": null,
+      "strategies": []
+    },
+    {
+      "id": "dust2-Mid-smoke-mid-to-b",
+      "map": "dust2",
+      "zone": "Mid",
+      "side": "T",
+      "type": "smoke",
+      "nom": "Smoke Mid to B (CT spawn)",
+      "cible": "CT spawn (couvre le cross mid → B)",
+      "depuis": "Départ T — Titanic",
+      "lancer": "Jumpthrow (maintenir, sauter et relâcher en même temps)",
+      "clic": "Gauche",
+      "position": "Sur le Titanic, les tonneaux quelques pas derrière toi.",
+      "visee": "Coin du toit blanc, juste à droite du poteau d'antenne.",
+      "temps_vol_s": 7.5,
+      "notes": "Visée très précise (±0,06°). Même spot que la smoke B Doors.",
+      "texte_carte": "Mid to B from Titanic (T) — Jumpthrow, left click. Spot & aim: On Titanic, barrels a few steps behind you, aim at the white roof corner just right of the antenna pole. Lands: CT Spawn (covers the Mid-to-B cross), 7.5 s, tolerance ±0.06°.",
+      "images": {
+        "position": "dust2/Mid/smoke-mid-to-b/1_position.jpg",
+        "visee": "dust2/Mid/smoke-mid-to-b/2_visee.jpg"
+      },
+      "source_screens": [
+        "20261117141645_1.jpg",
+        "20261117141650_1.jpg"
+      ],
+      "getpos": null,
+      "strategies": []
+    },
+    {
+      "id": "dust2-Mid-smoke-b-doors",
+      "map": "dust2",
+      "zone": "B",
+      "side": "T",
+      "type": "smoke",
+      "nom": "Smoke B Doors",
+      "cible": "B Doors",
+      "depuis": "Départ T — Titanic",
+      "lancer": "Jumpthrow (maintenir, sauter et relâcher en même temps)",
+      "clic": "Gauche",
+      "position": "Dans le coin du muret, le tonneau bleu clair derrière toi.",
+      "visee": "Juste au-dessus du créneau le plus à droite de la maison crénelée.",
+      "temps_vol_s": 9.5,
+      "notes": "Visée très précise (±0,10°). Même spot que la smoke Mid to B.",
+      "texte_carte": "B Doors Smoke from T Spawn (T) — Jumpthrow, left click. Spot & aim: Stand in the low-wall corner, light-blue barrel behind you; aim just above the rightmost merlon of the crenellated house. Lands: B Doors, 9.5 s, tolerance ±0.10°.",
+      "images": {
+        "position": "dust2/Mid/smoke-b-doors/1_position.jpg",
+        "visee": "dust2/Mid/smoke-b-doors/2_visee.jpg"
+      },
+      "source_screens": [
+        "20261117141645_1.jpg",
+        "20261117141656_1.jpg"
+      ],
+      "getpos": null,
+      "strategies": []
+    },
+    {
+      "id": "dust2-Mid-flash-ct-spawn-pente-b",
+      "map": "dust2",
+      "zone": "Mid",
+      "side": "T",
+      "type": "flash",
+      "nom": "Flash CT spawn + pente B",
+      "cible": "CT spawn + pente B",
+      "depuis": "Milieu (Mid)",
+      "lancer": "Jumpthrow (maintenir, sauter et relâcher en même temps)",
+      "clic": "Gauche",
+      "position": "Contre le mur au milieu, à gauche de l'arche (emplacement marqué par le bot sur le screen).",
+      "visee": "Sur les portes du milieu, à la jonction des deux battants, au niveau du bas des portes.",
+      "temps_vol_s": null,
+      "notes": "Stuff perso, pas sur la map : pas de fantôme ni de réticule. Visée à vérifier.",
+      "texte_carte": "",
+      "images": {
+        "position": "dust2/Mid/flash-ct-spawn-pente-b/1_position.jpg",
+        "visee": "dust2/Mid/flash-ct-spawn-pente-b/2_visee.jpg"
+      },
+      "source_screens": [
+        "20261117143732_1.jpg",
+        "20261117143811_1.jpg"
+      ],
+      "getpos": null,
+      "strategies": []
+    },
+    {
+      "id": "dust2-A-smoke-a-long",
+      "map": "dust2",
+      "zone": "A",
+      "side": "T",
+      "type": "smoke",
+      "nom": "Smoke Cross",
+      "cible": "A Long",
+      "depuis": "Départ T (T Spawn)",
+      "lancer": "Jumpthrow (maintenir, sauter et relâcher en même temps)",
+      "clic": "Gauche",
+      "position": "Au coin du mur jaune (compteur électrique, lampadaire) sur ta gauche.",
+      "visee": "Coin avant du toit plat.",
+      "temps_vol_s": 7.1,
+      "notes": "",
+      "texte_carte": "A Long from T Spawn (T) — Jumpthrow, left click. Spot & aim: T Spawn: corner of the yellow wall (meter box, street lamp) at your left; aim at the flat roof's front corner. Lands: A Long, 7.1 s.",
+      "images": {
+        "position": "dust2/A/smoke-a-long/1_position.jpg",
+        "visee": "dust2/A/smoke-a-long/2_visee.jpg"
+      },
+      "source_screens": [
+        "20261117141715_1.jpg",
+        "20261117141722_1.jpg"
+      ],
+      "getpos": null,
+      "strategies": []
+    },
+    {
+      "id": "dust2-A-flash-a-site-long",
+      "map": "dust2",
+      "zone": "A",
+      "side": "T",
+      "type": "flash",
+      "nom": "Flash A site (depuis Long)",
+      "cible": "A site",
+      "depuis": "Grandes portes (Long doors)",
+      "lancer": "Jumpthrow (maintenir, sauter et relâcher en même temps)",
+      "clic": "Gauche",
+      "position": "Aux grandes portes de Long, contre le mur en pierre à gauche du battant (emplacement marqué par le bot sur le screen).",
+      "visee": "Sur le rideau métallique du garage sous l'auvent, à droite de la benne bleue, à hauteur de la tête du fantôme, juste à sa droite.",
+      "temps_vol_s": null,
+      "notes": "Stuff perso, pas sur la map : pas de fantôme ni de réticule. Visée à vérifier.",
+      "texte_carte": "",
+      "images": {
+        "position": "dust2/A/flash-a-site-long/1_position.jpg",
+        "visee": "dust2/A/flash-a-site-long/2_visee.jpg"
+      },
+      "source_screens": [
+        "20261117145516_1.jpg",
+        "20261117145534_1.jpg"
+      ],
+      "getpos": null,
+      "strategies": []
+    },
+    {
+      "id": "dust2-Mid-molo-mid-lurk",
+      "map": "dust2",
+      "zone": "Mid",
+      "side": "CT",
+      "type": "molotov",
+      "nom": "Molo Mid (lurk)",
+      "cible": "Mid",
+      "depuis": "Mid — Xbox",
+      "lancer": "Standing throw (immobile, relâcher)",
+      "clic": "Gauche",
+      "position": "Contre la Xbox, à côté du buisson sec.",
+      "visee": "Sur le bord supérieur de la bâche, un peu à droite de son coin arrondi en haut à gauche.",
+      "temps_vol_s": 2.0,
+      "notes": "",
+      "texte_carte": "Mid Molotov from Mid (lurk) (CT) — Standing throw, left click. Spot & aim: Stand against Xbox by the dry bush; aim on the tarp's top edge, a short way right of its rounded upper-left corner. Lands: Mid, 2.0 s.",
+      "images": {
+        "position": "dust2/Mid/molo-mid-lurk/1_position.jpg",
+        "visee": "dust2/Mid/molo-mid-lurk/2_visee.jpg"
+      },
+      "source_screens": [
+        "20261117142433_1.jpg",
+        "20261117150057_1.jpg"
+      ],
+      "getpos": null,
+      "strategies": []
+    },
+    {
+      "id": "dust2-A-smoke-short-drop",
+      "map": "dust2",
+      "zone": "A",
+      "side": "T",
+      "type": "smoke",
+      "nom": "Smoke A Short drop",
+      "cible": "A Short drop",
+      "depuis": "Petits escaliers (A Short)",
+      "lancer": "Crouched throw (maintenir Ctrl et relâcher)",
+      "clic": "Gauche",
+      "position": "Accroupi côté extérieur du bout du muret de l'escalier.",
+      "visee": "Coin supérieur gauche de la petite fenêtre.",
+      "temps_vol_s": 3.4,
+      "notes": "Même spot que la smoke Short box.",
+      "texte_carte": "A Short Drop Smoke from A Short (T) — Crouched throw (hold Ctrl and release), left click. Spot & aim: Crouch at the outer side of the stair wall's end (Short); aim at the small window's top-left corner. Lands: A Short drop, 3.4 s.",
+      "images": {
+        "position": "dust2/A/smoke-short-drop/1_position.jpg",
+        "visee": "dust2/A/smoke-short-drop/2_visee.jpg"
+      },
+      "source_screens": [
+        "20261117150609_1.jpg",
+        "20261117150634_1.jpg"
+      ],
+      "getpos": null,
+      "strategies": []
+    },
+    {
+      "id": "dust2-A-smoke-short-box",
+      "map": "dust2",
+      "zone": "A",
+      "side": "T",
+      "type": "smoke",
+      "nom": "Smoke A Short box",
+      "cible": "A Short box",
+      "depuis": "Petits escaliers (A Short)",
+      "lancer": "Crouched throw (maintenir Ctrl et relâcher)",
+      "clic": "Gauche + droit",
+      "position": "Accroupi côté extérieur du bout du muret de l'escalier.",
+      "visee": "Juste sous le coin inférieur gauche du cadre en bois.",
+      "temps_vol_s": 3.8,
+      "notes": "Même spot que la smoke Short drop.",
+      "texte_carte": "A Short Box Smoke from A Short (T) — Crouched throw (hold Ctrl and release), left + right click. Spot & aim: Crouch at the outer side of the stair wall's end (Short); aim just under the wooden frame's lower-left corner. Lands: A Short box, 3.8 s.",
+      "images": {
+        "position": "dust2/A/smoke-short-box/1_position.jpg",
+        "visee": "dust2/A/smoke-short-box/2_visee.jpg"
+      },
+      "source_screens": [
+        "20261117150609_1.jpg",
+        "20261117150655_1.jpg"
+      ],
+      "getpos": null,
+      "strategies": []
+    },
+    {
+      "id": "dust2-Mid-smoke-mid-doors",
+      "map": "dust2",
+      "zone": "Mid",
+      "side": "T",
+      "type": "smoke",
+      "nom": "Smoke Mid Doors",
+      "cible": "Mid Doors",
+      "depuis": "Milieu supérieur (Top Mid)",
+      "lancer": "Standing throw (immobile, relâcher)",
+      "clic": "Gauche",
+      "position": "Dans le passage, contre le mur de gauche, juste derrière les caisses.",
+      "visee": "Dans la grande ouverture de ciel de l'échafaudage, à droite de la corde qui pend.",
+      "temps_vol_s": 5.8,
+      "notes": "",
+      "texte_carte": "Mid Doors Smoke from Top Mid (T) — Standing throw, left click. Spot & aim: Stand in the passage at the left wall, right behind the crates; aim into the scaffold's big sky gap, right of the hanging rope. Lands: Mid Doors, 5.8 s.",
+      "images": {
+        "position": "dust2/Mid/smoke-mid-doors/1_position.jpg",
+        "visee": "dust2/Mid/smoke-mid-doors/2_visee.jpg"
+      },
+      "source_screens": [
+        "20261117151007_1.jpg",
+        "20261117151012_1.jpg"
+      ],
+      "getpos": null,
+      "strategies": []
+    },
+    {
+      "id": "dust2-Mid-molo-catwalk",
+      "map": "dust2",
+      "zone": "Mid",
+      "side": "T",
+      "type": "molotov",
+      "nom": "Molo Catwalk",
+      "cible": "Catwalk",
+      "depuis": "Milieu supérieur (Top Mid)",
+      "lancer": "Running throw (maintenir W et relâcher en courant) · vitesse ≈ 194 u/s",
+      "clic": "Gauche",
+      "position": "Contre le mur gauche du passage couvert, deux pas en arrière des caisses.",
+      "visee": "Coin inférieur droit de la tache de ciel devant toi.",
+      "temps_vol_s": 2.0,
+      "notes": "",
+      "texte_carte": "Catwalk Molotov from Top Mid (T) — Running throw (hold W and release while running), left click, speed ≈ 194 u/s. Spot & aim: Stand at the covered passage's left wall, two steps back from the crates; aim at the lower-right corner of the sky patch ahead. Lands: Catwalk, 2.0 s.",
+      "images": {
+        "position": "dust2/Mid/molo-catwalk/1_position.jpg",
+        "visee": "dust2/Mid/molo-catwalk/2_visee.jpg"
+      },
+      "source_screens": [
+        "20261117151017_1.jpg",
+        "20261117151031_1.jpg"
+      ],
+      "getpos": null,
+      "strategies": []
+    },
+    {
+      "id": "dust2-A-flash-long-support",
+      "map": "dust2",
+      "zone": "A",
+      "side": "T",
+      "type": "flash",
+      "nom": "Flash support Long",
+      "cible": "CT aux portes de Long",
+      "depuis": "Couloir extérieur (Outside Long)",
+      "lancer": "Jumpthrow (maintenir, sauter et relâcher en même temps)",
+      "clic": "Gauche",
+      "position": "Au coin gauche du mur turquoise.",
+      "visee": "Haut du mur blanc, là où le côté droit du tronc du palmier le rejoint.",
+      "temps_vol_s": 1.6,
+      "notes": "Aveugle les CT aux portes de Long.",
+      "texte_carte": "Long support flash (T) — Jumpthrow, left click. Spot & aim: Stand at the teal wall's left corner, aim at the white wall top where the palm trunk's right side meets it. Lands: Blinds CTs at Long Doors, 1.6 s.",
+      "images": {
+        "position": "dust2/A/flash-long-support/1_position.jpg",
+        "visee": "dust2/A/flash-long-support/2_visee.jpg"
+      },
+      "source_screens": [
+        "20261117151037_1.jpg",
+        "20261117151118_1.jpg"
+      ],
+      "getpos": null,
+      "strategies": []
+    },
+    {
+      "id": "dust2-A-molo-a-car",
+      "map": "dust2",
+      "zone": "A",
+      "side": "T",
+      "type": "molotov",
+      "nom": "Molo A Car",
+      "cible": "Derrière la voiture A",
+      "depuis": "Grandes portes (Long Doors)",
+      "lancer": "Jumpthrow (maintenir, sauter et relâcher en même temps)",
+      "clic": "Gauche",
+      "position": "Sur le tonneau bleu juste à l'intérieur des portes de Long.",
+      "visee": "Entre la plaque grise du haut du mur et l'encadrement de la porte.",
+      "temps_vol_s": 2.0,
+      "notes": "Fait sortir un CT caché derrière la voiture. Même spot que la smoke Cross.",
+      "texte_carte": "A Car Molotov (from outside Long Doors) (T) — Jumpthrow, left click. Spot & aim: Stand on the blue barrel just inside Long Doors; aim between the upper grey wall plate and the door frame. Lands: Behind A Car - flushes a CT hiding behind the car, 2.0 s.",
+      "images": {
+        "position": "dust2/A/molo-a-car/1_position.jpg",
+        "visee": "dust2/A/molo-a-car/2_visee.jpg"
+      },
+      "source_screens": [
+        "20261117151330_1.jpg",
+        "20261117151338_1.jpg"
+      ],
+      "getpos": null,
+      "strategies": []
+    },
+    {
+      "id": "dust2-A-smoke-cross-long-doors",
+      "map": "dust2",
+      "zone": "A",
+      "side": "CT",
+      "type": "smoke",
+      "nom": "Smoke Cross (portes Long)",
+      "cible": "Cross",
+      "depuis": "Grandes portes (Long Doors)",
+      "lancer": "Standing throw (immobile, relâcher)",
+      "clic": "Gauche",
+      "position": "Sur le tonneau bleu juste à l'intérieur des portes de Long.",
+      "visee": "Sur le fil électrique isolé dans le ciel, à mi-chemin entre les deux lampadaires.",
+      "temps_vol_s": 9.0,
+      "notes": "Même spot que la molo A Car.",
+      "texte_carte": "Cross Smoke from Long Doors (CT) — Standing throw, left click. Spot & aim: Stand on the blue barrel just inside Long Doors; aim at the lone power line in the sky, midway between the two street lamps. Lands: Cross, 9.0 s.",
+      "images": {
+        "position": "dust2/A/smoke-cross-long-doors/1_position.jpg",
+        "visee": "dust2/A/smoke-cross-long-doors/2_visee.jpg"
+      },
+      "source_screens": [
+        "20261117151330_1.jpg",
+        "20261117151345_1.jpg"
+      ],
+      "getpos": null,
+      "strategies": []
+    },
+    {
+      "id": "dust2-A-flash-a-site-pop-cafe",
+      "map": "dust2",
+      "zone": "A",
+      "side": "T",
+      "type": "flash",
+      "nom": "Flash A site pop (Café)",
+      "cible": "Cross / A site",
+      "depuis": "Couloir A — Café Américain",
+      "lancer": "Jumpthrow (maintenir, sauter et relâcher en même temps)",
+      "clic": "Gauche",
+      "position": "Au bout arrière du rideau du Café Américain.",
+      "visee": "Sur le tuyau de la lampe à gauche de la porte en arche du fond, à mi-hauteur.",
+      "temps_vol_s": 1.6,
+      "notes": "Pète au Cross : aveugle les CT sur A ou en rotation depuis CT spawn, sans flasher les coéquipiers.",
+      "texte_carte": "A Site Pop Flash from Long (Café to Cross) (T) — Jumpthrow, left click. Spot & aim: Stand at the Café Américain shutter's back end, aim at the lamp pipe left of the far arched door, mid-height. Lands: Pops at Cross; blinds CTs on A site or rotating from CT Spawn, 1.6 s.",
+      "images": {
+        "position": "dust2/A/flash-a-site-pop-cafe/1_position.jpg",
+        "visee": "dust2/A/flash-a-site-pop-cafe/2_visee.jpg"
+      },
+      "source_screens": [
+        "20261117151518_1.jpg",
+        "20261117151524_1.jpg"
+      ],
+      "getpos": null,
+      "strategies": []
+    },
+    {
+      "id": "dust2-A-flash-long-control",
+      "map": "dust2",
+      "zone": "A",
+      "side": "CT",
+      "type": "flash",
+      "nom": "Flash contrôle Long (depuis Cross)",
+      "cible": "Long Doors",
+      "depuis": "Couloir A (Rue principale)",
+      "lancer": "Standing throw (immobile, relâcher)",
+      "clic": "Gauche",
+      "position": "Avance contre le mur de la rue principale, à son coin gauche.",
+      "visee": "Juste au-dessus du haut de l'enseigne de la pharmacie, au-dessus du cross.",
+      "temps_vol_s": 1.6,
+      "notes": "Aveugle les T qui poussent par les portes de Long. Même spot que la flash Long.",
+      "texte_carte": "Support Flash for CT Long A Control from Cross (CT) — Standing throw, left click. Spot & aim: Walk into the Rue Principale wall at its left corner, aim just above the pharmacy sign's top, over the cross. Lands: Blinds Ts pushing through Long Doors, 1.6 s.",
+      "images": {
+        "position": "dust2/A/flash-long-control/1_position.jpg",
+        "visee": "dust2/A/flash-long-control/2_visee.jpg"
+      },
+      "source_screens": [
+        "20261117151650_1.jpg",
+        "20261117151656_1.jpg"
+      ],
+      "getpos": null,
+      "strategies": []
+    },
+    {
+      "id": "dust2-A-flash-long-a-long",
+      "map": "dust2",
+      "zone": "A",
+      "side": "CT",
+      "type": "flash",
+      "nom": "Flash Long (depuis A Long)",
+      "cible": "Long",
+      "depuis": "Couloir A (trottoir pharmacie)",
+      "lancer": "Standing throw (immobile, relâcher)",
+      "clic": "Gauche",
+      "position": "Sur le trottoir de A Long, au coin du bâtiment de la pharmacie.",
+      "visee": "Sur le fil électrique, une largeur d'enseigne à gauche des enseignes vertes.",
+      "temps_vol_s": 1.6,
+      "notes": "Même spot que la flash contrôle Long.",
+      "texte_carte": "Long Flash from A Long (CT) — Standing throw, left click. Spot & aim: Stand on the A Long sidewalk at the pharmacy building's corner; aim at the power line a sign-width left of the green signs. Lands: Long, 1.6 s.",
+      "images": {
+        "position": "dust2/A/flash-long-a-long/1_position.jpg",
+        "visee": "dust2/A/flash-long-a-long/2_visee.jpg"
+      },
+      "source_screens": [
+        "20261117151650_1.jpg",
+        "20261117151658_1.jpg"
+      ],
+      "getpos": null,
+      "strategies": []
     }
   ]
 }
