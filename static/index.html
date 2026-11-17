@@ -79,6 +79,7 @@
 const ZONE_ORDER = ["A", "Mid", "B"];
 const TYPES = { smoke: "Smoke", molotov: "Molotov", flash: "Flash", he: "HE", decoy: "Decoy" };
 let db = { lineups: [] };
+let READONLY = false;
 let state = { map: null, zone: null, side: "Tous", selected: null, editing: false };
 
 // Mémorise les filtres (confort uniquement, ignoré si le stockage échoue)
@@ -90,7 +91,15 @@ const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": 
 const color = t => `var(--${TYPES[t] ? t : "smoke"})`;
 
 async function load() {
-  db = await (await fetch("/api/lineups")).json();
+  // Appli locale : API Flask (modifiable). Version GitHub Pages : JSON statique (lecture seule).
+  try {
+    const r = await fetch("api/lineups");
+    if (!r.ok) throw 0;
+    db = await r.json();
+  } catch {
+    READONLY = true;
+    db = await (await fetch("lineups.json")).json();
+  }
   const maps = [...new Set(db.lineups.map(l => l.map))].sort();
   if (!maps.includes(state.map)) state.map = maps[0] || null;
   $("#map").innerHTML = maps.map(m => `<option ${m === state.map ? "selected" : ""}>${esc(m)}</option>`).join("");
@@ -131,7 +140,7 @@ function detailView(l) {
       <span class="badge big" style="background:${color(l.type)}">${esc(TYPES[l.type] || l.type)}</span>
       <h2>${esc(l.nom)}</h2>
       <span class="badge">${esc(l.side)}</span>
-      <div class="actions"><button id="edit">Modifier</button></div>
+      <div class="actions">${READONLY ? "" : '<button id="edit">Modifier</button>'}</div>
     </div>
     <div class="head">
       <span class="badge big" style="background:var(--accent)">${esc(l.lancer)}</span>
@@ -140,8 +149,8 @@ function detailView(l) {
       <span class="badge">${esc(l.depuis)} → ${esc(l.cible)}</span>
     </div>
     <div class="imgs">
-      <figure><img src="/screens/${esc(l.images?.position)}" alt="Position"><figcaption>1 · Position</figcaption></figure>
-      <figure><img src="/screens/${esc(l.images?.visee)}" alt="Visée"><figcaption>2 · Visée</figcaption></figure>
+      <figure><img src="screens/${esc(l.images?.position)}" alt="Position"><figcaption>1 · Position</figcaption></figure>
+      <figure><img src="screens/${esc(l.images?.visee)}" alt="Visée"><figcaption>2 · Visée</figcaption></figure>
     </div>
     <div class="info">
       <div class="box"><h3>Position</h3><p>${esc(l.position)}</p></div>
@@ -176,7 +185,7 @@ async function save(form) {
   const data = Object.fromEntries(new FormData(form));
   const n = parseFloat(String(data.temps_vol_s).replace(",", "."));
   data.temps_vol_s = Number.isFinite(n) ? n : null;
-  const res = await fetch(`/api/lineups/${encodeURIComponent(state.selected)}`, {
+  const res = await fetch(`api/lineups/${encodeURIComponent(state.selected)}`, {
     method: "PUT", headers: { "Content-Type": "application/json" }, body: JSON.stringify(data) });
   if (!res.ok) return toast("Échec de l'enregistrement");
   const updated = await res.json();
