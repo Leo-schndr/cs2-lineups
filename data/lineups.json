@@ -1473,6 +1473,411 @@
       ],
       "getpos": null,
       "strategies": []
+    },
+    {
+      "id": "anubis-Mid-flash-mid-ruins",
+      "map": "anubis",
+      "zone": "Mid",
+      "side": "T",
+      "type": "flash",
+      "nom": "Flash Mid",
+      "cible": "Mid",
+      "depuis": "Ruines (Ruins)",
+      "lancer": "Jumpthrow (maintenir, sauter et relâcher en même temps)",
+      "clic": "Gauche",
+      "position": "Dans l'allée des Ruines, entre les murs (à côté de l'affiche).",
+      "visee": "Bord gauche du mur en blocs, au-dessus de la marche.",
+      "temps_vol_s": 1.6,
+      "notes": "Même spot que la smoke Camera.",
+      "texte_carte": "Mid Flash from Ruins (T) — Jumpthrow, left click. Spot & aim: Stand in the Ruins lane between the walls, aim at the left edge of the block wall above the step. Lands: Mid, 1.6 s.",
+      "images": {
+        "position": "anubis/Mid/flash-mid-ruins/1_position.jpg",
+        "visee": "anubis/Mid/flash-mid-ruins/2_visee.jpg"
+      },
+      "source_screens": [
+        "20261117182624_1.jpg",
+        "20261117182630_1.jpg"
+      ],
+      "getpos": null,
+      "strategies": []
+    },
+    {
+      "id": "anubis-Mid-smoke-camera",
+      "map": "anubis",
+      "zone": "Mid",
+      "side": "T",
+      "type": "smoke",
+      "nom": "Smoke Camera",
+      "cible": "Camera",
+      "depuis": "Ruines (Ruins)",
+      "lancer": "Jumpthrow (maintenir, sauter et relâcher en même temps)",
+      "clic": "Gauche",
+      "position": "Dans les Ruines, à côté du mur aux hiéroglyphes (à côté de l'affiche).",
+      "visee": "Mur nu du fond, juste à droite de la tour étroite et pâle, au-dessus de la frise en zigzag.",
+      "temps_vol_s": 6.1,
+      "notes": "Visée très précise (±0,10°). Même spot que la flash Mid.",
+      "texte_carte": "Camera Smoke from Ruins (T) — Jumpthrow, left click. Spot & aim: Jump-throw in Ruins by the hieroglyph wall; aim at the far plain wall just right of the narrow pale tower, above the zigzag band. Lands: Camera, 6.1 s, tolerance ±0.10°.",
+      "images": {
+        "position": "anubis/Mid/smoke-camera/1_position.jpg",
+        "visee": "anubis/Mid/smoke-camera/2_visee.jpg"
+      },
+      "source_screens": [
+        "20261117182624_1.jpg",
+        "20261117182701_1.jpg"
+      ],
+      "getpos": null,
+      "strategies": []
+    },
+    {
+      "id": "anubis-Mid-molo-mid-doors",
+      "map": "anubis",
+      "zone": "Mid",
+      "side": "T",
+      "type": "molotov",
+      "nom": "Molo Mid Doors",
+      "cible": "Mid Doors",
+      "depuis": "Passerelle (Bridge)",
+      "lancer": "Standing throw (immobile, relâcher)",
+      "clic": "Gauche",
+      "position": "À la caisse sur le tapis.",
+      "visee": "Fente de fenêtre noire de gauche, au-dessus du mur crénelé.",
+      "temps_vol_s": 2.0,
+      "notes": "Visée très précise (±0,06°). Attention : sur ton screen, la visée est décalée de 0,11° (vers la gauche) par rapport au bon point, fie-toi au texte de visée.",
+      "texte_carte": "Mid Doors Molotov from Bridge (T) — Standing throw, left click. Spot & aim: Stand at the crate on the carpet; aim at the left black window slot above the crenellated wall. Lands: Mid Doors, 2.0 s, tolerance ±0.06°.",
+      "images": {
+        "position": "anubis/Mid/molo-mid-doors/1_position.jpg",
+        "visee": "anubis/Mid/molo-mid-doors/2_visee.jpg"
+      },
+      "source_screens": [
+        "20261117182825_1.jpg",
+        "20261117182900_1.jpg"
+      ],
+      "getpos": null,
+      "strategies": []
+    },
+    {
+      "id": "anubis-B-smoke-b-site-ruins",
+      "map": "anubis",
+      "zone": "B",
+      "side": "T",
+      "type": "smoke",
+      "nom": "Smoke B site",
+      "cible": "B site",
+      "depuis": "Ruines (Ruins)",
+      "lancer": "Standing throw (immobile, relâcher)",
+      "clic": "Gauche",
+      "position": "Dans le coin à l'ombre contre le mur.",
+      "visee": "Trouée de ciel entre les chapiteaux des deux premières colonnes.",
+      "temps_vol_s": 6.1,
+      "notes": "Visée très précise (±0,10°). Attention : sur ton screen, la visée est décalée de 4,4° par rapport au bon point, fie-toi au texte de visée.",
+      "texte_carte": "B Site Smoke from Ruins (T) — Standing throw, left click. Spot & aim: Stand in the shaded corner by the wall; aim at the sky gap between the first two column capitals. Lands: B Site, 6.1 s, tolerance ±0.10°.",
+      "images": {
+        "position": "anubis/B/smoke-b-site-ruins/1_position.jpg",
+        "visee": "anubis/B/smoke-b-site-ruins/2_visee.jpg"
+      },
+      "source_screens": [
+        "20261117183141_1.jpg",
+        "20261117183213_1.jpg"
+      ],
+      "getpos": null,
+      "strategies": []
+    },
+    {
+      "id": "anubis-B-molo-pillar-outside-long",
+      "map": "anubis",
+      "zone": "B",
+      "side": "T",
+      "type": "molotov",
+      "nom": "Molo Pillar",
+      "cible": "Pillar",
+      "depuis": "Couloir extérieur (Outside Long)",
+      "lancer": "Jumpthrow (maintenir, sauter et relâcher en même temps)",
+      "clic": "Gauche",
+      "position": "Dans le couloir extérieur, à côté du panneau « B », regard vers le haut.",
+      "visee": "Bord droit de la grosse colonne ronde, juste au-dessus de sa bande bleue.",
+      "temps_vol_s": 1.7,
+      "notes": "Attention : sur ton screen, la visée est décalée de 3,9° par rapport au bon point, fie-toi au texte de visée.",
+      "texte_carte": "Pillar Molotov from Outside Long (T) — Jumpthrow, left click. Spot & aim: Jump-throw on Outside Long by the B sign and look up; aim at the big round column's right edge, just above its blue band. Lands: Pillar, 1.7 s.",
+      "images": {
+        "position": "anubis/B/molo-pillar-outside-long/1_position.jpg",
+        "visee": "anubis/B/molo-pillar-outside-long/2_visee.jpg"
+      },
+      "source_screens": [
+        "20261117183304_1.jpg",
+        "20261117183315_1.jpg"
+      ],
+      "getpos": null,
+      "strategies": []
+    },
+    {
+      "id": "anubis-B-molo-b-pillar-ruins",
+      "map": "anubis",
+      "zone": "B",
+      "side": "T",
+      "type": "molotov",
+      "nom": "Molo B Pillar",
+      "cible": "B Pillar",
+      "depuis": "Couloir extérieur (Ruins)",
+      "lancer": "Jumpthrow (maintenir, sauter et relâcher en même temps)",
+      "clic": "Gauche",
+      "position": "Contre le mur « B PILLAR », au pied des marches.",
+      "visee": "Visée non affichée par la map (mode examen) : se référer au screen.",
+      "temps_vol_s": 1.7,
+      "notes": "Visée très précise (±0,06°). Le screen a été pris en mode examen (pas de texte de visée), mais le lancer a atterri parfaitement : le screen de visée est fiable.",
+      "texte_carte": "B Pillar Molotov from Ruins (T) — Jumpthrow, left click. EXAM - no aim help, throw from memory. Lands: B Pillar, 1.7 s, tolerance ±0.06°.",
+      "images": {
+        "position": "anubis/B/molo-b-pillar-ruins/1_position.jpg",
+        "visee": "anubis/B/molo-b-pillar-ruins/2_visee.jpg"
+      },
+      "source_screens": [
+        "20261117183322_1.jpg",
+        "20261117183550_1.jpg"
+      ],
+      "getpos": null,
+      "strategies": []
+    },
+    {
+      "id": "anubis-A-flash-a-main-canal",
+      "map": "anubis",
+      "zone": "A",
+      "side": "CT",
+      "type": "flash",
+      "nom": "Flash A Main pop",
+      "cible": "A Main",
+      "depuis": "Canal",
+      "lancer": "Standing throw (immobile, relâcher)",
+      "clic": "Gauche",
+      "position": "Dans le Canal, au bord de l'eau (à côté de la porte).",
+      "visee": "Bord intérieur droit de l'arche du fond, là où l'arc commence à se courber.",
+      "temps_vol_s": 1.6,
+      "notes": "Visée très précise (±0,10°). Attention : sur ton screen, la visée est décalée de 4,4° par rapport au bon point, fie-toi au texte de visée. Même spot que la flash A site pop.",
+      "texte_carte": "A Main Pop Flash from Canal (CT) — Standing throw, left click. Spot & aim: Stand in Canal at the water's edge; aim at the far archway's right inner edge, where the arch starts to curve. Lands: A Main, 1.6 s, tolerance ±0.10°.",
+      "images": {
+        "position": "anubis/A/flash-a-main-canal/1_position.jpg",
+        "visee": "anubis/A/flash-a-main-canal/2_visee.jpg"
+      },
+      "source_screens": [
+        "20261117183750_1.jpg",
+        "20261117183819_1.jpg"
+      ],
+      "getpos": null,
+      "strategies": []
+    },
+    {
+      "id": "anubis-A-flash-a-site-canal",
+      "map": "anubis",
+      "zone": "A",
+      "side": "CT",
+      "type": "flash",
+      "nom": "Flash A site pop",
+      "cible": "A site",
+      "depuis": "Canal",
+      "lancer": "Standing throw (immobile, relâcher)",
+      "clic": "Gauche",
+      "position": "Dans le Canal contre le mur, regard vers le haut.",
+      "visee": "Juste sous la grande corniche, à gauche du haut de la colonne, au-dessus de la fenêtre en arche.",
+      "temps_vol_s": 1.6,
+      "notes": "Sur ton screen, la position était décalée de 16 u et la visée de 0,64°. Même spot que la flash A Main pop.",
+      "texte_carte": "A Site Pop Flash from Canal (CT) — Standing throw, left click. Spot & aim: Stand in Canal by the wall and look up; aim just under the big cornice, left of the column top, above the arched window. Lands: A Site, 1.6 s.",
+      "images": {
+        "position": "anubis/A/flash-a-site-canal/1_position.jpg",
+        "visee": "anubis/A/flash-a-site-canal/2_visee.jpg"
+      },
+      "source_screens": [
+        "20261117183750_1.jpg",
+        "20261117184025_1.jpg"
+      ],
+      "getpos": null,
+      "strategies": []
+    },
+    {
+      "id": "anubis-A-molo-a-site-boat",
+      "map": "anubis",
+      "zone": "A",
+      "side": "T",
+      "type": "molotov",
+      "nom": "Molo A site",
+      "cible": "A site",
+      "depuis": "Bateau (Boat)",
+      "lancer": "Jumpthrow (maintenir, sauter et relâcher en même temps)",
+      "clic": "Gauche",
+      "position": "Collé au mur de gauche, à côté du bassin.",
+      "visee": "Mur de briques nu, au-dessus et à gauche des pots.",
+      "temps_vol_s": 2.0,
+      "notes": "",
+      "texte_carte": "A Site Molotov from Boat (T) — Jumpthrow, left click. Spot & aim: Stand tight to the left wall by the pool, aim at the blank brick wall above and left of the pots. Lands: A Site, 2.0 s.",
+      "images": {
+        "position": "anubis/A/molo-a-site-boat/1_position.jpg",
+        "visee": "anubis/A/molo-a-site-boat/2_visee.jpg"
+      },
+      "source_screens": [
+        "20261117183957_1.jpg",
+        "20261117184005_1.jpg"
+      ],
+      "getpos": null,
+      "strategies": []
+    },
+    {
+      "id": "anubis-A-smoke-heaven-boat",
+      "map": "anubis",
+      "zone": "A",
+      "side": "T",
+      "type": "smoke",
+      "nom": "Smoke Heaven",
+      "cible": "Heaven",
+      "depuis": "Bateau (Boat)",
+      "lancer": "Jumpthrow (maintenir, sauter et relâcher en même temps)",
+      "clic": "Gauche",
+      "position": "Au bateau, contre le mur de gauche (à côté des paniers).",
+      "visee": "Partie de mur nue au-dessus des pots en terre.",
+      "temps_vol_s": 4.2,
+      "notes": "Visée très précise (±0,06°).",
+      "texte_carte": "Heaven Smoke from Boat (T) — Jumpthrow, left click. Spot & aim: Stand at the boat by the left wall, aim at the plain wall section above the clay pots. Lands: Heaven, 4.2 s, tolerance ±0.06°.",
+      "images": {
+        "position": "anubis/A/smoke-heaven-boat/1_position.jpg",
+        "visee": "anubis/A/smoke-heaven-boat/2_visee.jpg"
+      },
+      "source_screens": [
+        "20261117184008_1.jpg",
+        "20261117184012_1.jpg"
+      ],
+      "getpos": null,
+      "strategies": []
+    },
+    {
+      "id": "anubis-A-smoke-a-connection",
+      "map": "anubis",
+      "zone": "A",
+      "side": "T",
+      "type": "smoke",
+      "nom": "Smoke A Connection",
+      "cible": "A Connection",
+      "depuis": "Côté supérieur T (Bridge)",
+      "lancer": "Standing throw (immobile, relâcher)",
+      "clic": "Gauche",
+      "position": "À gauche du gros pilier, au bord de l'eau.",
+      "visee": "Petite fenêtre en arche à droite de la colonne.",
+      "temps_vol_s": 3.2,
+      "notes": "Visée très précise (±0,10°). Même spot que la molo Plat.",
+      "texte_carte": "A Connection Smoke from Bridge (T) — Standing throw, left click. Spot & aim: Stand left of the big pillar by the water, aim at the small arched window right of the column. Lands: A Connection, 3.2 s, tolerance ±0.10°.",
+      "images": {
+        "position": "anubis/A/smoke-a-connection/1_position.jpg",
+        "visee": "anubis/A/smoke-a-connection/2_visee.jpg"
+      },
+      "source_screens": [
+        "20261117184151_1.jpg",
+        "20261117184157_1.jpg"
+      ],
+      "getpos": null,
+      "strategies": []
+    },
+    {
+      "id": "anubis-A-molo-plat",
+      "map": "anubis",
+      "zone": "A",
+      "side": "T",
+      "type": "molotov",
+      "nom": "Molo Plat",
+      "cible": "Plat",
+      "depuis": "Côté supérieur T (Drop)",
+      "lancer": "Standing throw (immobile, relâcher)",
+      "clic": "Gauche",
+      "position": "À gauche du gros pilier, au bord de l'eau.",
+      "visee": "Coin inférieur droit de l'ouverture de la fenêtre en arche.",
+      "temps_vol_s": 2.0,
+      "notes": "Même spot que la smoke A Connection.",
+      "texte_carte": "Plat Molotov from Drop (T) — Standing throw, left click. Spot & aim: Stand left of the big pillar by the water, aim at the lower right of the arched window opening. Lands: Plat, 2.0 s.",
+      "images": {
+        "position": "anubis/A/molo-plat/1_position.jpg",
+        "visee": "anubis/A/molo-plat/2_visee.jpg"
+      },
+      "source_screens": [
+        "20261117184151_1.jpg",
+        "20261117184159_1.jpg"
+      ],
+      "getpos": null,
+      "strategies": []
+    },
+    {
+      "id": "anubis-A-smoke-main-heaven",
+      "map": "anubis",
+      "zone": "A",
+      "side": "CT",
+      "type": "smoke",
+      "nom": "Smoke Main",
+      "cible": "Main",
+      "depuis": "Paradis (Heaven)",
+      "lancer": "Jumpthrow (maintenir, sauter et relâcher en même temps)",
+      "clic": "Gauche",
+      "position": "Derrière la bâche orange.",
+      "visee": "Mur en briques de grès, à gauche de l'échelle.",
+      "temps_vol_s": 5.0,
+      "notes": "Visée précise (±0,44°). Attention : sur ton screen, la visée est décalée de 3,5° par rapport au bon point, fie-toi au texte de visée. Spot partagé avec la flash Water et la molo Cake.",
+      "texte_carte": "Main Smoke from Heaven (CT) — Jumpthrow, left click. Spot & aim: Stand behind the orange tarp, aim at the sandstone brick wall left of the ladder. Lands: Main, 5.0 s, tolerance ±0.44°.",
+      "images": {
+        "position": "anubis/A/smoke-main-heaven/1_position.jpg",
+        "visee": "anubis/A/smoke-main-heaven/2_visee.jpg"
+      },
+      "source_screens": [
+        "20261117184307_1.jpg",
+        "20261117184314_1.jpg"
+      ],
+      "getpos": null,
+      "strategies": []
+    },
+    {
+      "id": "anubis-A-flash-water-heaven",
+      "map": "anubis",
+      "zone": "A",
+      "side": "CT",
+      "type": "flash",
+      "nom": "Flash Water",
+      "cible": "Water",
+      "depuis": "Paradis (Heaven)",
+      "lancer": "Standing throw (immobile, relâcher)",
+      "clic": "Gauche",
+      "position": "Derrière la bâche orange.",
+      "visee": "Bord avant de la planche de l'échafaudage, sous le panneau « EXIT ».",
+      "temps_vol_s": 1.6,
+      "notes": "Même spot que la smoke Main.",
+      "texte_carte": "Water Flash from Heaven (CT) — Standing throw, left click. Spot & aim: Stand behind the tarp, aim at the front edge of the wooden scaffold plank under the Exit sign. Lands: Water, 1.6 s.",
+      "images": {
+        "position": "anubis/A/flash-water-heaven/1_position.jpg",
+        "visee": "anubis/A/flash-water-heaven/2_visee.jpg"
+      },
+      "source_screens": [
+        "20261117184307_1.jpg",
+        "20261117184330_1.jpg"
+      ],
+      "getpos": null,
+      "strategies": []
+    },
+    {
+      "id": "anubis-A-molo-cake-heaven",
+      "map": "anubis",
+      "zone": "A",
+      "side": "CT",
+      "type": "molotov",
+      "nom": "Molo Cake",
+      "cible": "Cake",
+      "depuis": "Paradis (Heaven)",
+      "lancer": "Standing throw (immobile, relâcher)",
+      "clic": "Gauche",
+      "position": "Dans Heaven sous le balcon (derrière la bâche orange), regard vers le haut.",
+      "visee": "Sur la vigne suspendue, juste sous ses fleurs roses.",
+      "temps_vol_s": 1.7,
+      "notes": "Visée précise (±0,34°). Sur ton screen, le lancer a atterri à 95 u de la cible : vise 0,64° plus haut. Même spot que la smoke Main.",
+      "texte_carte": "Cake Molotov from Heaven (CT) — Standing throw, left click. Spot & aim: Stand in Heaven under the balcony and look up; aim at the hanging flower vine just below its pink flowers. Lands: Cake, 1.7 s, tolerance ±0.34°.",
+      "images": {
+        "position": "anubis/A/molo-cake-heaven/1_position.jpg",
+        "visee": "anubis/A/molo-cake-heaven/2_visee.jpg"
+      },
+      "source_screens": [
+        "20261117184307_1.jpg",
+        "20261117184345_1.jpg"
+      ],
+      "getpos": null,
+      "strategies": []
     }
   ]
 }
